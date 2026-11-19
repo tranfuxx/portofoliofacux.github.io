@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facundo | Portfolio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <nav class="nav-container">
+            <a href="#inicio" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button id="btn-tema" class="btn-tema" title="Cambiar tema">☀️ / 🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <img src="img/yo.png" alt="Avatar de Facundo" class="avatar">
+                <h1>Hola, soy <span>Facundo</span></h1>
+                <h2>Estudiante de Tecnicatura en Programación — 6°2</h2>
+                <p>Desarrollo web dinámicas con alto impacto visual y aprendiendo mas sobre la programación.</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn-principal">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn-secundario">Contactarme</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+            <div class="sobre-mi-card">
+                <p>
+                Actualmente ando cursando Programacion en la Escuela Secundaria Tecnica N°5. Me interesa aprender cosas nuevas, saber mas sobre el desarrollo web y programar.    
+                </p>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <h2 class="titulo-seccion">Proyectos</h2>
+            <div class="proyectos-grid">
+
+                <article class="proyecto-card oculto">
+                    <img src="img/carrusel.png" alt="Captura Tienda Dinámica">
+                    <div class="proyecto-info">
+                        <span class="anio">2026</span>
+                        <h3>Tienda Dinámica con Carrusel</h3>
+                        <p>Catálogo interactivo con carrusel de productos y manipulación avanzada del DOM.</p>
+                        <div class="tags">  
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://tiendadinamicaa.netlify.app/" target="_blank" class="btn-repo">Ver la pagina</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card oculto">
+                    <img src="img/san juan.png" alt="Captura Portales Turísticos">
+                    <div class="proyecto-info">
+                        <span class="anio">2026</span>
+                        <h3>Portales Turísticos Provinciales</h3>
+                        <p>Sitios web informativos sobre provincias argentinas (San Juan).</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>UX/UI</span>
+                        </div>
+                        <a href="https://sanjuanpagina.netlify.app/" target="_blank" class="btn-repo">Ver la pagina</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card oculto">
+                    <img src="img/cal.png" alt="Captura Calculadora JS">
+                    <div class="proyecto-info">
+                        <span class="anio">2026</span>
+                        <h3>Calculadora Basica Interactiva</h3>
+                        <p>Aplicación web para operaciones matemáticas con validación en tiempo real.</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://calculadorabasicaaa.netlify.app/" target="_blank" class="btn-repo">Ver la calculadora</a>
+                    </div>
+                </article>
+        </section>
+
+        <section id="habilidades" class="seccion">
+            <h2 class="titulo-seccion">Habilidades y Tecnologías</h2>
+            <div class="habilidades-contenedor">
+                <div class="habilidad-grupo">
+                    <h3>Desarrollo Web</h3>
+                    <div class="tags">
+                        <span>HTML5 Semántico</span>
+                        <span>CSS3 (Grid / Flexbox)</span>
+                        <span>JavaScript (DOM / Eventos)</span>
+                        <span>Diseño Responsivo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <p class="subtitulo-contacto">Si tenés alguna consulta completá el formulario y me llega directo al mail.</p>
+            
+            <form id="form-contacto" action="https://formspree.io/f/xbgokwgq" method="POST" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje (mínimo 10 caracteres)..." required></textarea>
+                </div>
+
+                <p id="mensaje-error" class="error-texto"></p>
+
+                <button type="submit" class="btn-principal">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Facundo — 6°2 |</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
